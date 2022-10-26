@@ -1,0 +1,22 @@
+@import 'app-route';
+
+.header
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .search{
+        width: 100%;
+        order: 1;
+        margin: 0.5rem 0;
+    }
+    @include tablet
+    {
+        .search
+        {
+            width: 50%;
+            order: 0;
+        }
+    }
+}

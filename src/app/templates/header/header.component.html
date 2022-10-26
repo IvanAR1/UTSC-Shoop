@@ -1,0 +1,78 @@
+<!-- Primer Header -->
+<header style="background-color: #166E3B">
+  <div class="container header">
+    <!-- Logo -->
+    <a routerLink="/index" class="text-decoration-none">
+      <img src="favicon-light.ico" class="bi me-2 favicon">
+    </a>
+
+    <!-- Localización -->
+    <a href="" class="text-light nav-location"> 
+      <i class="mt-2 bi bi-geo-alt"></i>
+      <div>
+        <span>Hola</span>
+        <span>Ingresa tu ubicación</span>
+      </div>
+    </a>
+
+    <!-- Buscador -->
+    <form class="d-flex search" role="search">
+      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+      <button class="btn btn-outline-success" type="submit"><i class="text-white bi bi-search"></i></button>
+    </form>
+    <!-- Usuario -->
+    <div class="dropdown">
+      <button class="text-light btn d-flex align-items-baseline dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+        <i class="bi bi-person-circle"></i>
+        <div>
+          <span class="ms-2">Usuario</span>
+        </div>
+      </button>
+      <form class="dropdown-menu dropdown-menu-dark" style="height: auto; width: 20rem; padding: 1rem; background-color: #6C9D81;">
+        <div class="mb-4">
+          <label for="FastEmail" class="form-label fs-4">Correo</label>
+          <input type="email" class="form-control fs-4" id="FastEmail" placeholder="Correo">
+        </div>
+        <div class="mb-4">
+          <label for="FastPassword" class="form-label fs-4">Contraseña</label>
+          <input type="password" class="form-control fs-4" id="FastPassword" placeholder="Contraseña">
+        </div>
+        <div class="mb-4 ms-1">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input fs-5" id="FastCheck">
+            <label class="form-check-label fs-5 lh-1" for="FastCheck">
+              Recordar
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary fs-4">Ingresar</button>
+      </form>
+    </div>
+    
+    <!-- Carrito -->
+    <div class="input-group-append">
+      <button class="btn text-light">
+          <span class="opacity-50 fs-3 rounded">0</span>
+          <i class="bi bi-cart fa-10x"></i>
+      </button>      
+    </div>
+  </div>
+</header>
+<!-- Fin del Header -->
+
+<!-- Segundo Header -->
+  <nav class="py-0 border-bottom" style="background-color: #6C9D81">
+    <div class="container header">
+      <ul class="nav me-auto">
+        <app-sidenav></app-sidenav>
+        <li class="nav-item"><a href="http://virtual.utsc.edu.mx/aulas/" class="text-light nav-link px-2">Aulas</a></li>
+        <li class="nav-item"><a href="http://virtual.utsc.edu.mx/" class="text-light nav-link px-2">Materia Virtual</a></li>
+        <li class="nav-item"><a href="http://saiiut.utsc.edu.mx/websaiiut/" class="text-light nav-link px-2">Saiiut</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="text-light nav-link px-2">Login</a></li>
+        <li class="nav-item"><a href="#" class="text-light nav-link px-2">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+<router-outlet></router-outlet>

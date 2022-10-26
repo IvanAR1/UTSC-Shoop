@@ -1,0 +1,27 @@
+.nav-location
+{
+    color: $negro;
+    display: flex;
+    align-items: center;
+    span
+    {
+        display: block;
+        font-size: 1.1rem;
+        margin: -1.2rem 0;
+        &:last-of-type
+        {
+            font-size: 1.4rem;
+        }
+    }
+    @include tablet
+    {
+        span
+        {
+            font-size: 0.8;
+            &:last-of-type
+            {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

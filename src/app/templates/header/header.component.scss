@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-@import 'app-route';
-
-.header
-{
-=======
 @use 'app-route' as *;
 .header
 {
@@ -24,34 +18,21 @@
 
 .header__primary, .nav__primary
 {
->>>>>>> 0a67c7a (Actualizacion de diciembre)
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    .search{
-=======
     .header__search{
->>>>>>> 0a67c7a (Actualizacion de diciembre)
         width: 100%;
         order: 1;
         margin: 0.5rem 0;
     }
     @include tablet
     {
-<<<<<<< HEAD
-        .search
-=======
         .header__search
->>>>>>> 0a67c7a (Actualizacion de diciembre)
         {
             width: 50%;
             order: 0;
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0a67c7a (Actualizacion de diciembre)

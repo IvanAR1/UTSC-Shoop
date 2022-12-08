@@ -1,0 +1,13 @@
+@use 'app-route' as *;
+img
+{
+    height: 25rem;
+    width: 100%;
+}
+@include tablet
+{   
+    img
+    {
+        height: 50rem;
+    }
+}

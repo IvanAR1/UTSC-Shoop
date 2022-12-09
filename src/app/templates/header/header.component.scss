@@ -1,0 +1,38 @@
+@use 'app-route' as *;
+.header
+{
+    background-color: $verde-primary;
+}
+
+.nav, .user__dropdown
+{
+    background-color: $verde-secondary;
+}
+
+.user__dropdown
+{
+    height: auto;
+    width: 20rem; 
+    padding: 1rem;
+}
+
+.header__primary, .nav__primary
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .header__search{
+        width: 100%;
+        order: 1;
+        margin: 0.5rem 0;
+    }
+    @include tablet
+    {
+        .header__search
+        {
+            width: 50%;
+            order: 0;
+        }
+    }
+}

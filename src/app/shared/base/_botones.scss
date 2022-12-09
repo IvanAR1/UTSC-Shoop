@@ -1,13 +1,28 @@
+<<<<<<< HEAD
 .nav-location
 {
     color: $negro;
     display: flex;
     align-items: center;
+=======
+.nav-location, .sidebar-location
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav-location
+{
+>>>>>>> 0a67c7a (Actualizacion de diciembre)
     span
     {
         display: block;
         font-size: 1.1rem;
+<<<<<<< HEAD
         margin: -1.2rem 0;
+=======
+        margin: -1.0rem 0;
+>>>>>>> 0a67c7a (Actualizacion de diciembre)
         &:last-of-type
         {
             font-size: 1.4rem;
@@ -24,4 +39,20 @@
             }
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+.sidebar-location
+{
+    i
+    {
+        font-size: 5rem;
+    }
+    span
+    {
+        font-size: 2.1rem;
+        margin-left: 1rem;
+    }
+>>>>>>> 0a67c7a (Actualizacion de diciembre)
 }
